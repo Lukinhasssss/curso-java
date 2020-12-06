@@ -1,5 +1,7 @@
 package application;
 
+import entities.Account;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -15,7 +17,11 @@ public class Program {
 		 * 	de realizar empréstimo.
 		 */
 		
+		/*
+		 * Upcasting e Downcasting
+		 */
 		
+		Account account = new Account(1001, "Alex", 0.0);
 
 	}
 
