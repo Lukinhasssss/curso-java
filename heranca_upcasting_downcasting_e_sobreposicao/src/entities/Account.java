@@ -42,7 +42,7 @@ public class Account {
 	*/
 	
 	public void withdraw(double amount) { // Método para realizar a operação de saque (withdraw)
-		balance -= amount;
+		balance -= amount + 5.0;
 	}
 	
 	public void deposit(double amount) { // Método para realizar um depósito

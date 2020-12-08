@@ -27,6 +27,12 @@ public class BusinessAccount extends Account { // Desta forma e defino que a cla
 		}
 	}
 	
+	@Override
+	public void withdraw(double amount) {
+		super.withdraw(amount);
+		balance -= 2.0;
+	}
+	
 	
 	/*
 	 * 	Definições importantes:

@@ -1,6 +1,6 @@
 package entities;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account { // Savings Account == Conta Poupança | // final evita que a classe seja herdada
 	
 	private Double interestRate; // taxa de juros
 	
@@ -23,6 +23,11 @@ public class SavingsAccount extends Account {
 	
 	public void updateBalance() { // Método responsável por atualizar o saldo da conta com base na taxa de juros
 		balance += balance * interestRate;
+	}
+	
+	@Override // SOBRECARGA DO MÉTODO withdraw()
+	public final void withdraw(double amount) { // final evita que o método seja sobreposto por uma subclasse desta classe
+		balance -= amount;
 	}
 
 }
