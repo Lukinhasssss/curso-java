@@ -46,7 +46,7 @@ public class Account {
 		this.withdrawLimit = withdrawLimit;
 	}
 	
-	public void deposit(double amount) {
+	public void deposit(Double amount) {
 		balance += amount;
 	}
 	
